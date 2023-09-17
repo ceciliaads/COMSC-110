@@ -33,24 +33,33 @@ int main() {
 			labeled appropriately to indicate the frequency of compounding.
 */
 
+	// This program ask user for an amount in USD, and and annual interest to then calculate the compounded annually with it's total, and the compounded daily with it's total.
+
+	//1. declares the principal amount variable, and asks user to enter a USD amount, reading it's input.
 	float principalAmount;
 	cout << "Enter a principal amount, in dollars and cents: " << endl;
 	cin >> principalAmount;
 
+	//2. declares the annual interest variable, and asks user to enter the rate, reading it's input.
 	float annualInterest;
 	cout << "What is the annual interest rate?" << endl;
 	cin >> annualInterest;
 
+	//3. declares compoundedAnnually variable, calculating the interest earned during one year by multiplying the principal by the interest rate.
 	float compoundedAnnually;
 	compoundedAnnually = principalAmount * (annualInterest * 0.01);
 
+	//4. declares a totalBalance for Compounded Annually, by summing up the principalAmount and compoundedAnnually.
 	float totalBalanceCA = principalAmount + compoundedAnnually;
 
+	//5. declares compoundedDaily variable, calculating the interest earned during one year by using the formula provided.
 	float compoundedDaily;
 	compoundedDaily = principalAmount * pow((1 + (annualInterest * 0.01) / 365), 365) - principalAmount;
 
+	//6. declares a totalBalance for Compounded Daily, by summing up the principalAmount and compoundedDaily.
 	float totalBalanceCD = principalAmount + compoundedDaily;
 
+	//7. sets output to be manipulated a certain way and prints all outputs showing the calculations with their references.
 	cout << fixed << setprecision(2) << showpoint;
 	cout << "For a loan of " << setw(20) << right << "$" << setw(10) << right << principalAmount << endl;
 	cout << "With a rate of " << setw(29) << right << annualInterest << setw(2) << right << "%" << endl;
@@ -70,18 +79,24 @@ int main() {
 
 */
 
+	//This program asks user for a height and a width of a display screen, calculating  the screen size with the Pythagorean formula.
+
+	//1. declares height variable, and ask user to enter the height of a display screen in inches, reading it's input.
 	float height;
 	cout << "Enter the height of a display screen in inches: " << endl;
 	cin >> height;
 
+	//2. declares width variable, and ask user to enter the width of a display screen in inches, reading it's input.
 	float width;
 	cout << "Enter the width of a display screen in inches: " << endl;
 	cin >> width;
 
+	//3. declares screenSize variable, calculating it's size in inches by using the Pythagorean formula.
 	float screenSize;
 	screenSize = pow(height,2) + pow(width,2);
 	screenSize = sqrt(screenSize);
 
+	//4. prints the result in inches of an LG screen.
 	cout << "LG " << setprecision(0) << noshowpoint << screenSize << '"' << endl << endl;
 
 /*
@@ -93,17 +108,23 @@ int main() {
 
 */
 
+	// This program asks a user to enter the cost of tank of gas and the number of miles driven, calculating the cost per mile.
+
+	//1. declares gasTank variable, asking user to enter the cost of a tank of gas, reading it's input.
 	float gasTank;
 	cout << "Enter the cost of a tank of gas: " << endl;
 	cin >> gasTank;
 
+	//2. declares drivenMiles variable, asking user to enter the number of miles driven, reading it's input.
 	float drivenMiles;
 	cout << "Enter the number of miles driven on that tank of gas: " << endl;
 	cin >> drivenMiles;
 
+	//3. declares costPerMile variable, calculating it by dividing the cost of a tank of gas by the number of miles driven
 	float costPerMile;
 	costPerMile = gasTank / drivenMiles;
 
+	//4. prints all outputs, showing the calculation
 	cout << fixed << setprecision(2) << showpoint;
 	cout << "Cost of gas:" << setw(10) << right << "$" << setw(10) << right << gasTank << endl;
 	cout << "Miles driven:" << setw(19) << right << drivenMiles << endl;
@@ -122,40 +143,58 @@ int main() {
 
 */
 
+	//This program simulates two rolling dice, playing "Las Vegas dice game". If the total of both dice rolls 2, 3 or 12, user loses. If the total is 7 or 11, user wins.
+	// Otherwise, the program will tell the user there is a point, and displays this point, allowing the user to roll the dices again, if total is equals to the point number,
+	// user wins, else user loses.
+
+	//1. sets a seed value for the function rand() that will be used to create a random number. Declares randomNumber variable assigning the rand() function as it's value.
+	// Declares die1 variable, giving it a 1 - 6 range, dividing randomNumber by 6, plus 1.
 	srand(time(0));
-	int i;
-	i = rand();
-	int die1 = (i % 6) +1;
+	int randomNumber;
+	randomNumber = rand();
+	int die1 = (randomNumber % 6) +1;
 
-	i = rand();
-	int die2 = (i % 6) +1;
+	//2. assigns the rand() function to randomNumber again. Declares die2 variable, giving it a 1 - 6 range, dividing randomNumber by 6, plus 1.
+	randomNumber = rand();
+	int die2 = (randomNumber % 6) +1;
 
+	//3. declares dieTotal by summing up die1 and die2.
 	int dieTotal = die1 + die2;
 
+	//4. prints output showing the user what the two die rolled and it's total.
 	cout << "Player rolls " << die1 << " and " << die2 << ". Total: " << setw(7) << dieTotal << endl;
 
+	//5. using the if statement, creates the first condition to separate the "loser" numbers. Only printing "loser" if dieTotal is equals to 2, 3 or 12.
 	if (dieTotal == 2 or dieTotal == 3 or dieTotal == 12)
 	{
 		cout << "Loser" << endl;
 	}
+	//6. creates a second condition to separate the "winner" numbers. Only printing "winner" if dieTotal equals to 7 or 11.
 	else if (dieTotal == 7 or dieTotal == 11)
 	{
 		cout << "Winner" << endl;
 	}
+	//7. the point, will allow user to roll the dies again.
 	else
 	{
+		//tells the user there is a point, displaying the point number.
 		cout << "There is a point: " << setw(18) << dieTotal << endl;
 
-		i = rand();
-		die1 = (i % 6) +1;
+		// assigns the function rand() to randomValue to generate a random number, giving die1 a 1 - 6 range, again.
+		randomNumber = rand();
+		die1 = (randomNumber % 6) +1;
 
-		i = rand();
-		die2 = (i % 6) +1;
+		// assigns the function rand() to randomValue to generate a random number, giving die2 a 1 - 6 range, again.
+		randomNumber = rand();
+		die2 = (randomNumber % 6) +1;
 
+		// declares a dieTotal2 variable to sum up the two new rolling dices.
 		int dieTotal2 = die1 + die2;
 
+		// prints the two new rolling dices, and it's total.
 		cout << "Player then rolls " << die1 << " and " << die2 << ". Total: " << setw(2) << dieTotal2 << endl;
 
+		// creates nested if, by giving the first condition. if dieTotal is equals to the dieTotal2, prints winner. Otherwise prints loser.
 		if (dieTotal == dieTotal2)
 		{
 			cout << "Winner" << endl;
