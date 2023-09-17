@@ -1,0 +1,20 @@
+//============================================================================
+// Name        : 09-11-2023-rand.cpp
+// Author      : Cecilia Da Silva
+// Version     :
+// Copyright   : Your copyright notice
+// Description : clase 6 - rand()
+//============================================================================
+
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+	int i;
+	i = rand();
+	int die = (i % 6) + 1;
+	cout << i << setw(2) << die << endl;
+
+	return 0;
+}

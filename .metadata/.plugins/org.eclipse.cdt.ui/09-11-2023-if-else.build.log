@@ -1,0 +1,15 @@
+18:45:39 **** Incremental Build of configuration Debug for project 09-11-2023-if-else ****
+make all 
+Building file: ../src/09-11-2023-if-else.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/09-11-2023-if-else.d" -MT"src/09-11-2023-if-else.o" -o "src/09-11-2023-if-else.o" "../src/09-11-2023-if-else.cpp"
+Finished building: ../src/09-11-2023-if-else.cpp
+ 
+Building target: 09-11-2023-if-else
+Invoking: MacOS X C++ Linker
+g++  -o "09-11-2023-if-else"  ./src/09-11-2023-if-else.o   
+Finished building target: 09-11-2023-if-else
+ 
+
+18:45:40 Build Finished. 0 errors, 0 warnings. (took 816ms)
+

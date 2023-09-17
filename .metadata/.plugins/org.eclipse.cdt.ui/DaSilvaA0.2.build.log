@@ -1,0 +1,6 @@
+00:31:40 **** Incremental Build of configuration Debug for project DaSilvaA0.2 ****
+make all 
+make: Nothing to be done for `all'.
+
+00:31:40 Build Finished. 0 errors, 0 warnings. (took 80ms)
+

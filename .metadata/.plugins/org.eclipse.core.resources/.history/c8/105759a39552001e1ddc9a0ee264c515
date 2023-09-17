@@ -1,0 +1,15 @@
+//============================================================================
+// Name        : 09-13-2023.cpp
+// Author      : Cecilia Da Silva
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Clase 7, if else and loops
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	return 0;
+}

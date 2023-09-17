@@ -1,0 +1,15 @@
+//============================================================================
+// Name        : 09-11-2023-if-else.cpp
+// Author      : Cecilia Da Silva
+// Version     :
+// Copyright   : Your copyright notice
+// Description : clase 6 if - else
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Clase 6 - if else" << endl; // prints Clase 6 - if else
+	return 0;
+}

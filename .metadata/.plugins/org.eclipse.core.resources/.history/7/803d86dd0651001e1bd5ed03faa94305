@@ -1,0 +1,15 @@
+//============================================================================
+// Name        : 09-11-2023-rand.cpp
+// Author      : Cecilia Da Silva
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+	cout << "Clase 6 - rand " << endl; // prints Clase 6 - rand 
+	return 0;
+}

@@ -1,0 +1,15 @@
+18:37:46 **** Incremental Build of configuration Debug for project 09-13-2023 ****
+make all 
+Building file: ../src/09-13-2023.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/09-13-2023.d" -MT"src/09-13-2023.o" -o "src/09-13-2023.o" "../src/09-13-2023.cpp"
+Finished building: ../src/09-13-2023.cpp
+ 
+Building target: 09-13-2023
+Invoking: MacOS X C++ Linker
+g++  -o "09-13-2023"  ./src/09-13-2023.o   
+Finished building target: 09-13-2023
+ 
+
+18:37:47 Build Finished. 0 errors, 0 warnings. (took 1s.148ms)
+
