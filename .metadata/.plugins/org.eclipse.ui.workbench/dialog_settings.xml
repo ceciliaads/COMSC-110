@@ -38,7 +38,9 @@
 		<item key="WizardZipFileResourceExportPage1.STORE_CREATE_STRUCTURE_ID" value="true"/>
 		<item key="WizardZipFileResourceExportPage1.STORE_COMPRESS_CONTENTS_ID" value="true"/>
 		<list key="WizardZipFileResourceExportPage1.STORE_DESTINATION_NAMES_ID">
+			<item value="/Users/ceciliadasilva/Desktop/DVC/Comsc 110/A2/DaSilvaA2.zip"/>
 			<item value="/Users/ceciliadasilva/Desktop/DVC/Comsc 110/Assignments/A2/DaSilvaA2.zip"/>
+			<item value="/Users/ceciliadasilva/Desktop/DVC/Comsc 110/Assignments/A2/DasilvaA22.zip"/>
 			<item value="/Users/ceciliadasilva/Desktop/DVC/Comsc 110/Assignments/A1/DaSilvaA1.zip"/>
 			<item value="/Users/ceciliadasilva/Desktop/DVC/Comsc 110/Assignments/A1/Untitled.zip"/>
 			<item value="/Users/ceciliadasilva/Desktop/DVC/Introducction to Programming/Assignments/A0.2/DaSilvaA0.2.zip"/>

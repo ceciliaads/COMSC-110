@@ -1,3 +1,39 @@
-19:05:40 **** Build of configuration Debug for project DaSilvaA2 ****
+18:04:38 **** Incremental Build of configuration Debug for project DaSilvaA3 ****
 make all 
 make: Nothing to be done for `all'.
+18:04:40 **** Incremental Build of configuration Debug for project DaSilvaA3 ****
+make all 
+make: Nothing to be done for `all'.
+18:08:00 **** Incremental Build of configuration Debug for project DaSilvaA3 ****
+make all 
+make: Nothing to be done for `all'.
+18:08:02 **** Incremental Build of configuration Debug for project DaSilvaA3 ****
+make all 
+make: Nothing to be done for `all'.
+18:08:18 **** Incremental Build of configuration Debug for project DaSilvaA3 ****
+make all 
+make: Nothing to be done for `all'.
+18:09:38 **** Incremental Build of configuration Debug for project DaSilvaA3 ****
+make all 
+Building file: ../src/DaSilvaA3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DaSilvaA3.d" -MT"src/DaSilvaA3.o" -o "src/DaSilvaA3.o" "../src/DaSilvaA3.cpp"
+Finished building: ../src/DaSilvaA3.cpp
+ 
+Building target: DaSilvaA3
+Invoking: MacOS X C++ Linker
+g++  -o "DaSilvaA3"  ./src/DaSilvaA3.o   
+Finished building target: DaSilvaA3
+ 
+18:09:45 **** Incremental Build of configuration Debug for project DaSilvaA3 ****
+make all 
+Building file: ../src/DaSilvaA3.cpp
+Invoking: GCC C++ Compiler
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/DaSilvaA3.d" -MT"src/DaSilvaA3.o" -o "src/DaSilvaA3.o" "../src/DaSilvaA3.cpp"
+Finished building: ../src/DaSilvaA3.cpp
+ 
+Building target: DaSilvaA3
+Invoking: MacOS X C++ Linker
+g++  -o "DaSilvaA3"  ./src/DaSilvaA3.o   
+Finished building target: DaSilvaA3
+ 
